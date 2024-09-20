@@ -1,5 +1,5 @@
 import app from "./app.js";
-import { connectToDB } from "./src/config/config.js";
+import { connectToDB } from "./Beckend/config/config.js";
 
 const port = process.env.PORT || 3200
 app.listen(port, () => {

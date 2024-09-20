@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Inventory Management</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Inventory</h1>
+
+        <!-- Form to Add New Product -->
+        <h2>Add Product</h2>
+        <form id="add-product-form">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" required>
+            <label for="productQuantity">Quantity:</label>
+            <input type="number" id="productQuantity" required>
+            <button type="submit">Add Product</button>
+        </form>
+
+        <!-- List of Products -->
+        <h2>All Products</h2>
+        <div id="product-list"></div>
+
+        <!-- Update Product Quantity -->
+        <h2>Update Product Quantity</h2>
+        <form id="update-product-form">
+            <label for="updateProductId">Product ID:</label>
+            <input type="text" id="updateProductId" required>
+            <label for="updateQuantity">New Quantity:</label>
+            <input type="number" id="updateQuantity" required>
+            <button type="submit">Update Quantity</button>
+        </form>
+
+        <!-- Delete Product -->
+        <h2>Delete Product</h2>
+        <form id="delete-product-form">
+            <label for="deleteProductId">Product ID:</label>
+            <input type="text" id="deleteProductId" required>
+            <button type="submit">Delete Product</button>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

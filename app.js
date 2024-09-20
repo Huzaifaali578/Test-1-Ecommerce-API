@@ -1,9 +1,19 @@
 import "./env.js"
 import express from "express";
-import productRouter from "./src/routes/product.routes.js";
+import productRouter from "./Beckend/routes/product.routes.js";
+import path from "path";
 
 const app = express()
 
+// Serve static files from the frontend directory
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, "./frontend")))
+
+// Route to serve the homepage (static index.html)
+app.get('/', (req, res) => {
+    console.log("Sending index.html file");
+    res.sendFile(path.join(__dirname, './frontend/index.html'))
+})
 
 // Middleware to parse incoming JSON requests
 app.use(express.json());
