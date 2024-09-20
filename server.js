@@ -1,5 +1,5 @@
 import app from "./app.js";
-import connectToDB from "./srv/config/config.js";
+import { connectToDB } from "./srv/config/config.js";
 
 const port = process.env.PORT || 3200
 app.listen(port, () => {
