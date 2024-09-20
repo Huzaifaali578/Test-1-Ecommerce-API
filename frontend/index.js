@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:3200/products';
+const apiUrl = 'https://test-1-ecommerce-api.onrender.com/products';
 
 // Fetch and display all products
 async function fetchProducts() {
